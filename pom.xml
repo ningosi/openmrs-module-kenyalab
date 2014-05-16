@@ -3,21 +3,21 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.openmrs.module</groupId>
-	<artifactId>keaddonexample</artifactId>
+	<artifactId>kenyalab</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>KenyaEMR Add-on Example Module</name>
-	<description>Example of adding content to KenyaEMR</description>
+	<name>KenyaLab Module</name>
+	<description>Adding Laboratory Inforamtion to KenyaEMR</description>
 
 	<organization>
-		<name>I-TECH</name>
+		<name>Ningosi</name>
 		<url>http://www.go2itech.org</url>
 	</organization>
 
 	<scm>
-		<connection>scm:git:git@github.com:I-TECH/openmrs-module-keaddonexample.git</connection>
-		<developerConnection>scm:git:git@github.com:I-TECH/openmrs-module-keaddonexample.git</developerConnection>
-		<url>scm:git:git@github.com:I-TECH/openmrs-module-keaddonexample.git</url>
+		<connection>scm:git:git@github.com:ningosi/openmrs-module-kenyalab.git</connection>
+		<developerConnection>scm:git:git@github.com:ningosi/openmrs-module-kenyalab.git</developerConnection>
+		<url>scm:git:git@github.com:ningosi/openmrs-module-kenyalab.git</url>
 	</scm>
 
 	<modules>
@@ -34,7 +34,7 @@
 		<htmlformentryVersion>2.2.1</htmlformentryVersion>
 		<idgenVersion>2.6</idgenVersion>
 		<kenyacoreVersion>2.0-SNAPSHOT</kenyacoreVersion>
-		<kenyaemrVersion>14.1-SNAPSHOT</kenyaemrVersion>
+		<kenyaemrVersion>14.2-SNAPSHOT</kenyaemrVersion>
 		<kenyauiVersion>2.0-SNAPSHOT</kenyauiVersion>
 		<metadatadeployVersion>1.1</metadatadeployVersion>
 		<metadatasharingVersion>1.1.8</metadatasharingVersion>
@@ -49,6 +49,11 @@
 		<dependencies>
 
 			<!-- Begin OpenMRS modules -->
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>kenyaemr-api</artifactId>
+				<version>${kenyaemrVersion}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
